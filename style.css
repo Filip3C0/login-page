@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: rgb(44, 13, 94);
+  background: -moz-linear-gradient(
+    39deg,
+    rgba(45, 13, 96, 1) 19%,
+    rgba(102, 57, 171, 1) 69%,
+    rgba(214, 52, 235, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    39deg,
+    rgba(45, 13, 96, 1) 19%,
+    rgba(102, 57, 171, 1) 69%,
+    rgba(214, 52, 235, 1) 100%
+  );
+  background: linear-gradient(
+    39deg,
+    rgba(45, 13, 96, 1) 19%,
+    rgba(102, 57, 171, 1) 69%,
+    rgba(214, 52, 235, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d0d60",endColorstr="#d634eb",GradientType=1);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+section {
+  position: absolute;
+  height: 100vh;
+  background-color: white;
+  width: 35%;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgba(45, 13, 96, 0.808);
+  margin-top: 50px;
+}
+.line p::after {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 3px;
+  background: #6d2db0;
+  margin-top: 40px;
+  margin-left: 5px;
+}
+.line p::before {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 3px;
+  background: #6d2db0;
+  margin-right: 5px;
+}
+p {
+  text-align: center;
+}
+.logos-images{
+  margin-right: 25%;
+}
+.logos-images img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  position: relative;
+  left: 47%;
+  top: 45px
+  
+}
+input {
+  width: 368px;
+  height: 55px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 20px;
+  box-shadow: 0px 4px 4px rgba(45, 13, 96, 0.808);
+  border-radius: 25px;
+  outline: none;
+  padding-left: 20px;
+  font-size: 18px;
+}
+label {
+  width: 350px;
+  height: 50px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 31px;
+  user-select: none;
+}
+button {
+  width: 250px;
+  height: 51px;
+  position: absolute;
+  top: 590px;
+  left: 150px;
+  border-radius: 25px;
+  background-color: rgba(45, 13, 96, 0.808);
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+.aside-image {
+  width: 600px;
+  position: relative;
+  left: 50%;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1315px) {
+  img{
+      width: 400px  ;
+      margin-top: 100px;
+      position: relative;
+      left: 50%;
+  }
+  input{
+    margin-top: -20px;
+  }
+  label{
+    position: relative;
+    top:8px;
+  }
+  button{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    left: 2px;
+    
+  }
+  .logos-images{
+    display: block;
+   position: relative;
+   top: -60px;
+   left: -20px;
+   
+  }
+}
+@media screen and (max-width: 1245px) {
+ .aside-image{
+    display: none;
+  }
+  section{
+    margin: 0 auto;
+    width: 100vw;
+  }
+  h1{
+   font-size: 40px;
+  }
+  .logos-images{
+    display: block;
+   position: relative;
+   top: -60px;
+   left: 70px;
+  }
+}
+@media screen and (max-width: 955px) {
+  .logos-images{
+    position: relative;
+    left: 60px;
+    margin-right: 55%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .line p::after{
+    width: 100px;
+   
+  }
+  .line p::before{
+    width: 100px;
+
+  }
+  .logos-images{
+
+    margin-right: 55%;
+  }
+  .logos-images img{
+    position:relative;
+    left: 55px;
+    margin: 20px 10px 0 0 ;
+  }
+}
